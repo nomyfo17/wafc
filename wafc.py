@@ -25,6 +25,14 @@ def multi2(num1, num2):
     multi2result = num1 * num2
     return multi2result
 
+# "multi" multiply's any numbers. like, multi(5, 6, 1) will rusult "31"
+
+def multi(*args):
+    multiresult = 1
+    for num in args:
+        multiresult *= num
+    return multiresult
+
 # "show" is to make a text show up on the users side. show("message!")
 
 def show(string1):
@@ -40,6 +48,15 @@ def showall(*args):
     print(string.rstrip())
     return string
 
+# "showall" is to make a text show up on the users side. showall("message!", hi) but w/ spaces.
+
+def show_strip(*args):
+    string = ""
+    for s in args:
+        string += str(s)
+    print(string.rstrip())
+    return string
+
 # "sub" subtract's two numbers. like, sub(5, 5) will rusult "1"
 
 def sub(num1, num2):
@@ -52,7 +69,9 @@ def sub(num1, num2):
 # "add3" add three numbers. like, add3(5, 6, 1) will rusult "12"
 # "add2" add two numbers. like, add2(5, 6) will rusult "11"
 # "addall" adds any numbers. like, addall(5, 6, 1) will rusult "12"
-# "showall" is to make a text show up on the users side. showall("message!", hi)
+# "showall" is to make a text show up on the users side. showall("message!", "hi")
+# "multi" multiply's any numbers. like, multi(5, 6, 1) will rusult "31"
+# "showall" is to make a text show up on the users side. showall("message!", hi) but w/ spaces.
 
 #if stuck try this as a base 
     #show("hello")
@@ -60,5 +79,4 @@ def sub(num1, num2):
 # start coding form this point, and on:
 
 #code HERE :
-
 
